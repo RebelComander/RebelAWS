@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/something', function () {
+	//return "tester";
+    return view('something');
+});
+
+Route::get('/tester', function () {
+	//return "tester";
+    return view('tester');
+});
+
+Route::get('/magic', 'MagicController@show');
