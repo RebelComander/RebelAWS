@@ -80,6 +80,19 @@
             color: grey;
         }
 
+        h3
+        {
+            font-weight: bold;
+            color: #008CBA;
+            text-align: center;
+        }
+
+        h4
+        {
+            font-weight: bold;
+            color: #008CBA;
+        }
+
         .CVLink
         {
             display: block;
@@ -112,14 +125,40 @@
             color: #008CBA;
         }
 
-    </style>
+        .CheckboxImage
+        {
+            float: left;
+            display: block;
+            height: auto;
+            width:15px;
+            height:15px;
+        }
 
+        .progress
+        {
+            background-color: #aaa;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .skill
+        {
+            padding-bottom: 10px;
+        }
+
+        .name-circle
+        {
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+    </style>
     <title>RH CV/Resume</title>
   </head>
   <body>
 
     <div class="container">
-        <dir class="jumbotron">
+        <div class="jumbotron">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <img src="Images/TestImage.jpg" class="ProfileImage">
@@ -227,7 +266,219 @@
 
                 
             </div>
-        </dir>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3>
+                <span class="ProfileSkills">
+                    Skills
+                </span>
+            </h3>
+        </div>
+        <div class="row">
+            <div class="jumbotron text-center col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <div class="title-skills">
+                    <h4>
+                        Professional skills
+                    </h4>
+                </div>
+                <div class="skill">
+                    <div class="title-progress">
+                        <span class="skill-name">
+                            HTML & CSS
+                        </span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress1" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                            90%
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="title-progress">
+                        <span class="skill-name">
+                            WordPress
+                        </span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress1" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                            75%
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="title-progress">
+                        <span class="skill-name">
+                            JavaScript
+                        </span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress1" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                            85%
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="title-progress">
+                        <span class="skill-name">
+                            Laravel
+                        </span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress1" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                            70%
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="title-progress">
+                        <span class="skill-name">
+                            Photoshop
+                        </span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress1" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+                            65%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="jumbotron text-center col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                <div class="title-skills">
+                    <h4>
+                        Additional Skills
+                    </h4>
+                </div>
+                <div class="circle-progress">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="circle">
+                                <div class="chart" data-percent="90">
+                                    <canvas id=canvas height="220" width="220" style="height: 110px; width: 110px;">
+                                    </canvas>
+                                </div>
+                                <div class="name-circle">
+                                    <span>
+                                        English
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="circle">
+                                <div class="chart" data-percent="90">
+                                    <canvas id=canvas2 height="220" width="220" style="height: 110px; width: 110px;">
+                                    </canvas>
+                                </div>
+                                <div class="name-circle">
+                                    <span>
+                                        Creativity
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="circle">
+                                <div class="chart" data-percent="90">
+                                    <canvas id=canvas3 height="220" width="220" style="height: 110px; width: 110px;">
+                                    </canvas>
+                                </div>
+                                <div class="name-circle">
+                                    <span>
+                                        Teamwork
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="other-skills">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="other">
+                                <div class="skill">
+                                    <img src="Images/Checkbox.png" class="CheckboxImage">
+                                        <span>
+                                            Photography
+                                        </span>
+                                </div>
+                                <div class="skill">
+                                    <img src="Images/Checkbox.png" class="CheckboxImage">
+                                        <span>
+                                            Mobile App Design
+                                        </span>
+                                </div>
+                                <div class="skill">
+                                    <img src="Images/Checkbox.png" class="CheckboxImage">
+                                        <span>
+                                            Logo Design
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="other">
+                                <div class="skill">
+                                    <img src="Images/Checkbox.png" class="CheckboxImage">
+                                        <span>
+                                            3D Animation
+                                        </span>
+                                </div>
+                                <div class="skill">
+                                    <img src="Images/Checkbox.png" class="CheckboxImage">
+                                        <span>
+                                            Audio Video Editing
+                                        </span>
+                                </div>
+                                <div class="skill">
+                                    <img src="Images/Checkbox.png" class="CheckboxImage">
+                                        <span>
+                                            UX and UI Design
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3>
+                <span class="ProfileEducation">
+                    Education
+                </span>
+            </h3>
+        </div>
+        <div class="row">
+            <div class="jumbotron text-center col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <h4>
+                    2014 - 2018
+                </h4>
+                <div class="UniStudies">
+                    
+                </div>
+
+            </div>
+            <div class="jumbotron text-center col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <h4>
+                    2013
+                </h4>
+                
+            </div>
+            <div class="jumbotron text-center col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                
+            </div>
+            <div class="jumbotron text-center col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+            </div>
+            <div class="jumbotron text-center col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                
+            </div>
+            <div class="jumbotron text-center col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                
+            </div>
+        </div>
     </div>
 
     <!-- Optional JavaScript -->
@@ -235,5 +486,86 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        window.onload = function()
+        {
+            var c = document.getElementById("canvas");
+            var W = c.width;
+            var H = c.height;
+            var color = "lightblue";
+
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.strokeStyle = "#222";
+            ctx.lineWidth = 30;
+            ctx.arc(W/2, H/2, 80, 0, Math.PI*2, false);
+            ctx.stroke();
+
+            var radians = 324 * Math.PI / 180;
+            ctx.beginPath();
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 30;
+            ctx.arc(W/2, H/2, 80, 0 - 90*Math.PI/180, radians - 90*Math.PI/180, false);
+            ctx.stroke();
+
+            ctx.fillStyle = "grey";
+            ctx.font = "50px arial";
+            text = "90%";
+            text_width = ctx.measureText(text).width;
+            ctx.fillText(text, W/2 - text_width/2, H/2 + 15);
+
+            var c = document.getElementById("canvas2");
+            var W = c.width;
+            var H = c.height;
+            var color = "lightblue";
+
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.strokeStyle = "#222";
+            ctx.lineWidth = 30;
+            ctx.arc(W/2, H/2, 80, 0, Math.PI*2, false);
+            ctx.stroke();
+
+            var radians = 288 * Math.PI / 180;
+            ctx.beginPath();
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 30;
+            ctx.arc(W/2, H/2, 80, 0 - 90*Math.PI/180, radians - 90*Math.PI/180, false);
+            ctx.stroke();
+
+            ctx.fillStyle = "grey";
+            ctx.font = "50px arial";
+            text = "80%";
+            text_width = ctx.measureText(text).width;
+            ctx.fillText(text, W/2 - text_width/2, H/2 + 15);
+
+
+            var c = document.getElementById("canvas3");
+            var W = c.width;
+            var H = c.height;
+            var color = "lightblue";
+
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.strokeStyle = "#222";
+            ctx.lineWidth = 30;
+            ctx.arc(W/2, H/2, 80, 0, Math.PI*2, false);
+            ctx.stroke();
+
+            var radians = 234 * Math.PI / 180;
+            ctx.beginPath();
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 30;
+            ctx.arc(W/2, H/2, 80, 0 - 90*Math.PI/180, radians - 90*Math.PI/180, false);
+            ctx.stroke();
+
+            ctx.fillStyle = "grey";
+            ctx.font = "50px arial";
+            text = "65%";
+            text_width = ctx.measureText(text).width;
+            ctx.fillText(text, W/2 - text_width/2, H/2 + 15);
+        }
+        </script>
+
   </body>
 </html>
