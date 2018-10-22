@@ -58,12 +58,40 @@
             color: grey;
         }
 
+        .UniStudies
+        {
+            font-size: 13px;
+            color: grey;
+            text-align: center;
+
+        }
+
+        .UniStudiesText
+        {
+            font-size: 13px;
+            color: black;
+            text-align: center;
+        }
+
         .info
         {
             font-size: 13px;
         }
 
         .ProfileText
+        {
+            font-size: 15px;
+            padding: 0;
+        }
+
+        .InterestText
+        {
+            font-size: 15px;
+            padding: 0;
+            color: white;
+        }
+
+        .InterestDescription
         {
             font-size: 15px;
             padding: 0;
@@ -118,6 +146,27 @@
             height: auto;
             width:100%;
             height:100%;
+        }
+
+        .EducationImage
+        {
+            text-align:center;
+            display: block;
+            height: auto;
+            width:15px;
+            height:15px;
+            float: left;
+        }
+
+        .InterestImage
+        {
+            text-align:center;
+            display: block;
+            height: auto;
+            width:45px;
+            height:45px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .ProfileName
@@ -451,33 +500,80 @@
             </h3>
         </div>
         <div class="row">
-            <div class="jumbotron text-center col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="jumbotron text-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <h4>
                     2014 - 2018
                 </h4>
+                <img src="Images/DegTypeLogo.png" class="EducationImage">
                 <div class="UniStudies">
-                    
+                    Bachelor of Information and Communication Technology
+                </div>
+
+                <img src="Images/InstLogo.png" class="EducationImage">
+                <div class="UniStudies">
+                    Western Sydney University
+                </div>
+                <div class="UniStudiesText">
+                    I am currently completing this degree.
                 </div>
 
             </div>
-            <div class="jumbotron text-center col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="jumbotron text-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <h4>
                     2013
                 </h4>
-                
-            </div>
-            <div class="jumbotron text-center col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                
-            </div>
-            <div class="jumbotron text-center col-lg-4 col-md-4 col-sm-12 col-xs-12">
 
-            </div>
-            <div class="jumbotron text-center col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <img src="Images/DegTypeLogo.png" class="EducationImage">
+                <div class="UniStudies">
+                    HSC
+                </div>
+
+                <img src="Images/InstLogo.png" class="EducationImage">
+                <div class="UniStudies">
+                    Sutherland Shire Christian School
+                </div>
+                <div class="UniStudiesText">
+                    I graduated from this high school successfully completing my HSC.
+                </div>
                 
             </div>
-            <div class="jumbotron text-center col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3>
+                <span class="ProfileEducation">
+                    Interests
+                </span>
+            </h3>
+            <p class="InterestDescription">
+                Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text
+            </p>
+        </div>
+        <div class="row">
+            <div class="jumbotron text-center col-lg-3 col-md-3 col-sm-6 col-xs-12" style="background-color: #0387CC!important;">
+                <img src="Images/Travel.png" class="InterestImage">
+                <span class="InterestText">
+                    Travel
+                </span>
             </div>
+            <div class="jumbotron text-center col-lg-3 col-md-3 col-sm-6 col-xs-12" style="background-color: #0387CC!important;">
+                <img src="Images/Music.png" class="InterestImage">
+                <span class="InterestText">
+                    Music
+                </span>
+            </div>
+            <div class="jumbotron text-center col-lg-3 col-md-3 col-sm-6 col-xs-12" style="background-color: #0387CC!important;">
+                <img src="Images/Gaming.png" class="InterestImage">
+                <span class="InterestText">
+                    Gaming
+                </span>
+            </div>
+            <div class="jumbotron text-center col-lg-3 col-md-3 col-sm-6 col-xs-12" style="background-color: #0387CC!important;">
+                <img src="Images/Movies.png" class="InterestImage">
+                <span class="InterestText">
+                    Movies
+                </span>
+            </div>
+
         </div>
     </div>
 
