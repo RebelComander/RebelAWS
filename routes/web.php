@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', "ContactController@test");
 
 Route::get('/something', function () {
 	//return "tester";
@@ -24,5 +22,7 @@ Route::get('/tester', function () {
 	//return "tester";
     return view('tester');
 });
+
+Route::post('/contact', "ContactController@send");
 
 Route::get('/magic', 'MagicController@show');

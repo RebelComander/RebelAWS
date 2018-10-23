@@ -183,6 +183,19 @@
             height:15px;
         }
 
+        .ContactImage
+        {
+            width:70px;
+            height:70px;
+            padding: 15px
+        }
+
+        .ContactInfoCenter
+        {
+            padding-left: 40px;
+            padding-top: 20px;
+        }
+
         .progress
         {
             background-color: #aaa;
@@ -201,8 +214,114 @@
             text-align: center;
         }
 
+        .ContactInfo
+        {
+            font-size: 15px;
+            color: black;
+            float: left;
+            display: block;
+        }
+
+        .jumbotron
+        {
+            justify-content:center;
+
+        }
+
+        .InterestSize
+        {
+            border-radius:0rem
+        }
+
+        @media only screen and (max-width: 550px) {
+            .InterestSize
+            {
+                border-radius:1rem;
+            }
+        }
+
+        .EducationSize
+        {
+            border-radius:0rem;
+        }
+
+        @media only screen and (max-width: 760px) {
+            .EducationSize
+            {
+                border-radius:1rem;
+            }
+        }
+
+        .SkillSize
+        {
+            border-radius:0rem;
+        }
+
+        @media only screen and (max-width: 760px) {
+            .SkillSize
+            {
+                border-radius:1rem;
+            }
+        }
+
+        input[type=text], select 
+        {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=email], select 
+        {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] 
+        {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover 
+        {
+            background-color: #45a049;
+        }
+
+        textarea[id=messageID] 
+        {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            resize: none;
+        }
+
     </style>
     <title>RH CV/Resume</title>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
   </head>
   <body>
 
@@ -325,7 +444,7 @@
             </h3>
         </div>
         <div class="row">
-            <div class="jumbotron text-center col-lg-5 col-md-5 col-sm-12 col-xs-12">
+            <div class="jumbotron text-center col-lg-5 col-md-5 col-sm-12 col-xs-12 SkillSize">
                 <div class="title-skills">
                     <h4>
                         Professional skills
@@ -392,7 +511,7 @@
                     </div>
                 </div>
             </div>
-            <div class="jumbotron text-center col-lg-7 col-md-7 col-sm-12 col-xs-12">
+            <div class="jumbotron text-center col-lg-7 col-md-7 col-sm-12 col-xs-12 SkillSize">
                 <div class="title-skills">
                     <h4>
                         Additional Skills
@@ -500,7 +619,7 @@
             </h3>
         </div>
         <div class="row">
-            <div class="jumbotron text-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="jumbotron text-center col-lg-6 col-md-6 col-sm-12 col-xs-12 EducationSize">
                 <h4>
                     2014 - 2018
                 </h4>
@@ -518,7 +637,7 @@
                 </div>
 
             </div>
-            <div class="jumbotron text-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="jumbotron text-center col-lg-6 col-md-6 col-sm-12 col-xs-12 EducationSize">
                 <h4>
                     2013
                 </h4>
@@ -549,37 +668,88 @@
             </p>
         </div>
         <div class="row">
-            <div class="jumbotron text-center col-lg-3 col-md-3 col-sm-6 col-xs-12" style="background-color: #0387CC!important;">
+            <div class="jumbotron text-center col-lg-3 col-md-3 col-sm-6 col-xs-12 InterestSize" style="background-color: #0387CC!important;">
                 <img src="Images/Travel.png" class="InterestImage">
                 <span class="InterestText">
                     Travel
                 </span>
             </div>
-            <div class="jumbotron text-center col-lg-3 col-md-3 col-sm-6 col-xs-12" style="background-color: #0387CC!important;">
+            <div class="jumbotron text-center col-lg-3 col-md-3 col-sm-6 col-xs-12 InterestSize" style="background-color: #0387CC!important;">
                 <img src="Images/Music.png" class="InterestImage">
                 <span class="InterestText">
                     Music
                 </span>
             </div>
-            <div class="jumbotron text-center col-lg-3 col-md-3 col-sm-6 col-xs-12" style="background-color: #0387CC!important;">
+            <div class="jumbotron text-center col-lg-3 col-md-3 col-sm-6 col-xs-12 InterestSize" style="background-color: #0387CC!important;">
                 <img src="Images/Gaming.png" class="InterestImage">
                 <span class="InterestText">
                     Gaming
                 </span>
             </div>
-            <div class="jumbotron text-center col-lg-3 col-md-3 col-sm-6 col-xs-12" style="background-color: #0387CC!important;">
+            <div class="jumbotron text-center col-lg-3 col-md-3 col-sm-6 col-xs-12 InterestSize" style="background-color: #0387CC!important;">
                 <img src="Images/Movies.png" class="InterestImage">
                 <span class="InterestText">
                     Movies
                 </span>
             </div>
-
         </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3>
+                <span class="ProfileEducation">
+                    Contact Us
+                </span>
+            </h3>
+        </div>
+        <div class="row">
+            <div class="jumbotron text-center col-lg-6 col-md-6 col-sm-12 col-xs-12" style="background-color: white!important;">
+                <h4>
+                    <span class="ProfileEducation">
+                            Input Details
+                    </span>
+                </h4>
+                <form id="contactForm" action="/contact" method="post" onsubmit="return false;">
+                    @csrf
+                    <input type="text" id="nameID" name="name" placeholder="Name" required>
+                    <br>
+                    <input type="email" id="emailID" name="email" placeholder="Email" required>
+                    <br>
+                    <textarea id="messageID" name="message" placeholder="Message" required></textarea>
+                    <br>
+                    <input id="btnSubmit" type="submit" value="Submit" required>
+                </form>
+            </div>
+            <div class="jumbotron text-center col-lg-6 col-md-6 col-sm-12 col-xs-12" style="background-color: white!important;">
+                <h4>
+                    <span class="ProfileEducation">
+                        Keep in touch
+                    </span>
+                </h4>
+                <div class="ContactInfoCenter">
+                <span class="text-center ContactInfo">
+                    <img src="Images/Address.png" class="ContactImage">
+                    Example Address
+                </span>
+                <span class="text-center ContactInfo">
+                    <img src="Images/Email.png" class="ContactImage">
+                    Example@email.com
+                </span>
+                <span class="text-center ContactInfo">
+                    <img src="Images/MobileNumber.png" class="ContactImage">
+                    0412345678
+                </span>  
+                <span class="text-center ContactInfo">
+                    <img src="Images/Website.png" class="ContactImage">
+                    www.rebelcomander.com
+                </span>
+            </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script id="CircleChartJS">
@@ -662,6 +832,24 @@
             ctx.fillText(text, W/2 - text_width/2, H/2 + 15);
         }
         </script>
+
+    <script type="text/javascript">
+        $(function(){
+            $('#btnSubmit').click(function(){
+                $.ajax({
+                    'url' : '/contact',
+                    'method' : 'post',
+                    'dataType' : 'json',
+                    'data' : $('#contactForm').serialize(),
+                }).done(function(){
+                    alert("done");
+                });
+            });
+        });
+
+
+
+    </script>
 
   </body>
 </html>
