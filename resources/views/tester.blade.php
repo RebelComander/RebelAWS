@@ -322,6 +322,7 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body>
 
@@ -707,6 +708,45 @@
                             Input Details
                     </span>
                 </h4>
+                <?php
+                // Checks if form has been submitted
+                if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                    function post_captcha($user_response) {
+                        $fields_string = '';
+                        $fields = array(
+                            'secret' => '6LdznngUAAAAALfdSuT6tmzJqOgYXf0irdgrVVWH',
+                            'response' => $user_response
+                        );
+                        foreach($fields as $key=>$value)
+                        $fields_string .= $key . '=' . $value . '&';
+                        $fields_string = rtrim($fields_string, '&');
+
+                        $ch = curl_init();
+                        curl_setopt($ch, CURLOPT_URL, 'https://www.google.com/recaptcha/api/siteverify');
+                        curl_setopt($ch, CURLOPT_POST, count($fields));
+                        curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
+                        curl_setopt($ch, CURLOPT_RETURNTRANSFER, True);
+
+                        $result = curl_exec($ch);
+                        curl_close($ch);
+
+                        return json_decode($result, true);
+                    }
+
+                    // Call the function post_captcha
+                    $res = post_captcha($_POST['g-recaptcha-response']);
+
+                    if (!$res['success']) {
+                        // What happens when the CAPTCHA wasn't checked
+                        echo '<p>Please go back and make sure you check the security CAPTCHA box.</p><br>';
+                    } else {
+                        // If CAPTCHA is successfully completed...
+
+                        // Paste mail function or whatever else you want to happen here!
+                        echo '<br><p>CAPTCHA was completed successfully!</p><br>';
+                    }
+                } else { ?>
+
                 <form id="contactForm" action="/contact" method="post" onsubmit="return false;">
                     @csrf
                     <input type="text" id="nameID" name="name" placeholder="Name" required>
@@ -714,9 +754,11 @@
                     <input type="email" id="emailID" name="email" placeholder="Email" required>
                     <br>
                     <textarea id="messageID" name="message" placeholder="Message" required></textarea>
+                    <div class="g-recaptcha" data-sitekey="6LdznngUAAAAACUeDHYV1XDUkGOeHtYALQBFmSAC"></div>
                     <br>
                     <input id="btnSubmit" type="submit" value="Submit" required>
                 </form>
+                <?php } ?>
             </div>
             <div class="jumbotron text-center col-lg-6 col-md-6 col-sm-12 col-xs-12" style="background-color: white!important;">
                 <h4>
